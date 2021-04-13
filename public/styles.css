@@ -1,0 +1,72 @@
+html{
+    font-family: 'Karla', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    width:99vw;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    top:0;
+    left:0;
+    background-color: white;
+    /* opacity: 0.6; */
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding: 0.8em;
+    font-size: 18px;
+    font-weight: 400;
+    color:#2B2839;
+    
+}
+.companyName{
+    padding-left: 0.3em;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width:33px;
+    height: 32px;
+    padding-left: 0.6em;
+}
+.offer-link a{
+    border-radius: 20px;
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0.5em;
+    background-color: #5035FF;
+}
+.blob{
+    width: 200px;
+    height: 200px;
+}
+@media screen and (max-width: 595px) {
+    .offer-link a {
+      display: none;
+    }
+}
+@media screen and (max-width: 410px) {
+    .signup{
+      display: none;
+    }
+}
+.blob{
+    width: 40em;
+}
+.site-header{
+    margin-top:20vh;
+    /* font-size: 200%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: red;
+}
