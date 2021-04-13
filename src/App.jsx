@@ -7,9 +7,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SiteHeader/>
-      <div className="blob">
-      <img src={blob} alt=""/>
-      </div>
+     
     </div>
   );
 }
