@@ -1,6 +1,9 @@
 html{
     font-family: 'Karla', sans-serif;
 }
+body{
+    padding-top: 5vh;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -46,8 +49,10 @@ li{
     background-color: #5035FF;
 }
 .blob{
-    width: 200px;
-    height: 200px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 5vh;
 }
 @media screen and (max-width: 595px) {
     .offer-link a {
@@ -59,25 +64,28 @@ li{
       display: none;
     }
 }
-.blob{
-    width: 40em;
+@media screen and (max-width: 1024px) {
+    .site-header-container img{
+      display: none;
+    }
 }
+
 .site-header-container{
-    margin-top:5vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width:100vw;
+    width:100%;
     height: fit-content;
 }
 .site-header{
     width: 80%;
     height: inherit;
     text-align: right;
+    padding-right: 5%;
 }
 .site-header h1{
-    font-size: 6em;
-    opacity: 0.85;
+    font-size: 5.5em;
+    color: #2B2839;
     text-shadow: 4px 4px 0 #fff;
 }
 .site-header h3{
@@ -100,5 +108,4 @@ li{
 .site-header-container img{
     height: 25em;
     width: 15em;
-    transform: scaleX(-1);
 }
