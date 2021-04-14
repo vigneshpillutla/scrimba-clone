@@ -2,7 +2,7 @@ html{
     font-family: 'Karla', sans-serif;
 }
 body{
-    padding-top: 5vh;
+    padding-top: 12vh;
 }
 nav{
     display: flex;
@@ -40,7 +40,7 @@ li{
     height: 32px;
     padding-left: 0.6em;
 }
-.offer-link a{
+#offer-link a{
     border-radius: 20px;
     color:white;
     font-size: 14px;
@@ -55,8 +55,17 @@ li{
     top: 5vh;
 }
 @media screen and (max-width: 595px) {
-    .offer-link a {
+    #offer-link a {
       display: none;
+    }
+    #bearded_man{
+        display: none;
+    }
+    #var_size_header{
+        font-size: 36px;
+    }
+    #var_size_text{
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 410px) {
@@ -65,8 +74,14 @@ li{
     }
 }
 @media screen and (max-width: 1024px) {
-    .site-header-container img{
+    .standing-guy{
       display: none;
+    }
+    #wheelchair{
+        display: none;
+    }
+    .about-section-content{
+        flex-direction: column;
     }
 }
 
@@ -108,4 +123,51 @@ li{
 .site-header-container img{
     height: 25em;
     width: 15em;
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 2000px;
+}
+.about-section img{
+    height: 250px;
+    padding:2%;
+}
+.about-section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    margin-right: 3%;
+    padding-right: 2%;
+}
+.content div{
+    padding-right: 35%;
+}
+.content h2{
+    padding-left: 6%;
+    border-left: 6px solid hsl(28, 52%, 95%);;
+}
+#green-content{
+    border-left-color: hsl(253, 100%, 95%);
+}
+.content h3{
+    font-weight:300 ;
+    line-height: 30px;
+    font-size:1.2em;
+}
+.abt-sec-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.nav-links li:hover{
+    transform: translateY(-4px);
+    transition-duration: 0.3s;
+    border-bottom:4px solid #2B2839;
+}
+#offer-link:hover{
+    transform: scale(1.1);
+    border:none;
+    animation-duration: 0.3s;
 }
