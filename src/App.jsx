@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import About from './About';
 import blob from './svgs/blobDiff.svg';
 import macbookGuy from './svgs/macbook-guy.svg'
 import wheelchair from './svgs/wheelchair.svg'
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SiteHeader/>
+      <About/>
     </div>
   );
 }
