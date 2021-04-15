@@ -22,9 +22,12 @@ nav{
 .nav-links{
     display: flex;
     list-style: none;
+    padding: 0;
 }
 li{
-    padding: 0.8em;
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 1em;
     font-size: 18px;
     font-weight: 400;
     color:#2B2839;
@@ -55,6 +58,11 @@ li{
     width: 400px;
     height: 400px;
     top: 5vh;
+}
+@media screen and (max-width: 330px) {
+    .nav-links li{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 595px) {
     #offer-link a {
@@ -205,12 +213,19 @@ li{
     min-height: 270px;
     display: flex;
     flex-direction: column;
-    border:1px solid white;
+    border:2px solid white;
     border-radius: 20px;
+}
+.course-card:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
 }
 .upper{
     height: 50%;
     /* background-color: hsla(54.00,100.00%,92.00%,100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px 20px 0 0;
     font-weight: 700;
     font-size: 1.7em;

@@ -1,8 +1,9 @@
 import React from 'react';
 import colors from './colors.js'
+import photos from './photos'
 function CourseCard({title,lessons,hours,name,level}){
     const color = colors[Math.floor(Math.random() * colors.length)];
-    console.log(color);
+    const photoSrc = (photos.filter(item=>item.name===name))[0]?.src;
     return (
         <div className="course-card">
             <div style={{backgroundColor:color}} className="upper">{title}</div>
@@ -12,7 +13,7 @@ function CourseCard({title,lessons,hours,name,level}){
                         <span>{lessons} lessons | {hours} hours</span>
                         <span>with <b>{name}</b></span>
                     </div>
-                    <div className="instructor-pic"></div>
+                    <img className="instructor-pic" src={`https://scrimba.com${photoSrc}`} alt=""/>
                 </div>
                 <div className="course-level">{level}</div>
             </div>

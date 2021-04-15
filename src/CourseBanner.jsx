@@ -1,7 +1,7 @@
 import React from 'react';
 import CourseCard from './CourseCard';
 function CourseBanner({bgcolor,header,subheader,cards}){
-    console.log(bgcolor);
+    // console.log(bgcolor);
     return(
         <div style={{backgroundColor:bgcolor}} className="course-banner">
             <h1>{header}</h1>

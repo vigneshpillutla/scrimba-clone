@@ -13,6 +13,7 @@ function App() {
       {courseBannerData.map(data=>
         <CourseBanner {...data} />
       )}
+      
     </div>
   );
 }
