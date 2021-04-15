@@ -1,5 +1,4 @@
 import React from 'react';
-import blob from './svgs/blobDiff.svg'
 import macbookGuy from './svgs/macbook-guy.svg'
 function SiteHeader(){
     return (
@@ -9,7 +8,7 @@ function SiteHeader(){
                 <h3 id="var_size_text">Our career path helps motivated students become hireable frontend developers for 1% of the cost </h3>
                 <button class="try-out">Try It Out Now!</button>
             </div>
-            <div class="standing-guy">
+            <div className="standing-guy">
                 <img src={macbookGuy} alt=""/>
             </div>
         </div>

@@ -8,7 +8,7 @@ function Navbar(){
             <h3 className="companyName">scrimba</h3>
             </div>
             <ul className="nav-links">
-                <li id="offer-link"><a href="#">Go Pro!</a></li>
+                <li id="offer-link"><a href="/">Go Pro!</a></li>
                 <li>All Courses</li>
                 <li>Sign In</li>
                 <li className="signup">Sign Up</li>

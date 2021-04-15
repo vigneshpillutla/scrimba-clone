@@ -1,17 +1,18 @@
 import React from 'react';
 import Navbar from './Navbar';
 import About from './About';
-import blob from './svgs/blobDiff.svg';
-import macbookGuy from './svgs/macbook-guy.svg'
-import wheelchair from './svgs/wheelchair.svg'
-import beardedGuy from './svgs/bearded_man.svg'
 import SiteHeader from './SiteHeader';
+import CourseBanner from './CourseBanner';
+import courseBannerData from './CourseBannerData.js';
 function App() {
   return (
     <div className="App">
       <Navbar />
       <SiteHeader/>
       <About/>
+      {courseBannerData.map(data=>
+        <CourseBanner {...data} />
+      )}
     </div>
   );
 }
