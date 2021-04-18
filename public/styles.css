@@ -331,7 +331,7 @@ button:focus{
 }
 .card-container{
     width: 80%;
-    max-width: 1500px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     gap:20px;
